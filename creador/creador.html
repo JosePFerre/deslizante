@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creador de niveles</title>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous"></script>
+  	<script src="main.js"></script>
+
+  	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div id="contenedorInputs">
+	<div>
+		<span>Altura</span>
+		<input type="number" id="alturaTablero">
+		<label>
+			<span>Igualar:</span>
+			<input type="checkbox" id="checkIgualar" checked><br>
+		</label>
+		<span>Anchura</span>
+		<input type="number" id="anchuraTablero"><br>
+		<span>Nivel</span>
+		<input type="number" id="nivelTablero"><br>
+		<button id ="btnGenerar" onclick="generarTablero()">Generar tablero</button>
+		<button id ="btnMatriz" onclick="limpiar()">Limpiar</button>
+		<button id ="btnMatriz" onclick="generarMatriz()">Generar matriz</button>
+	</div>
+</div>
+<div>
+	<button id ="btnInicio" onclick="activaStart()">Set Inicio</button>
+	<button id ="btnMeta" onclick="activaEnd()">Set Meta</button>
+	<label>
+		<span>Goma</span>
+		<input type="checkbox" id="checkBorrar"><br>
+	</label>
+</div>
+<div id="mainCont">
+	<div id="contenedorTablero"></div>
+	<div id="contenedorMatriz">
+		<textarea id="areaMatriz" hidden></textarea>
+	</div>
+</div>
+</body>
+</html>

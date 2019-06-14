@@ -1,0 +1,45 @@
+#mainCont{
+	display: flex;
+}
+
+#contenedorTablero{
+	cursor:crosshair;
+	user-select:none;
+	width:50%;
+}
+
+#contenedorMatriz{
+	width: 50%;
+	white-space:pre-wrap;
+}
+
+#areaMatriz{
+	width: 500px;
+	height: 300px;
+}
+
+.fila{
+	display:flex;
+}
+
+.celda{
+	width:40px;
+	height:40px;
+	outline: 1px solid green;
+}
+
+.vacio{
+	background-color: default;
+}
+
+.muro{
+	background-color:rgb(118, 164, 237);
+}
+
+.salida{
+	background-color: rgb(66, 244, 89);
+}
+
+.meta{
+	background-color: rgb(244, 65, 65);
+}
